@@ -1,30 +1,26 @@
 public class Breakfast
 {
-    double cost;
+    String cost;
     String description;
 
-    public Breakfast()
-    {
-        cost = 1.0;
-        description = "eggs 'n bacon";
+    public Breakfast(String name) {
+        this.description = name;
+        this.cost = "10";
     }
 
-    public Breakfast(String name)
-    {
-        description = name;
-        cost = 5.0;
+    public String getCost() {
+        return cost;
     }
 
-    public Breakfast(double money)
-    {
-        cost = money;
-        description = "eggs 'n bacon";
+    public void setCost(String cost) {
+        this.cost = cost;
     }
 
-    public Breakfast(String name, double money)
-    {
-        cost = money;
-        description = name;
+    public String getDescription() {
+        return description;
     }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
